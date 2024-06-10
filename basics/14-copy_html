@@ -1,2 +1,9 @@
 #!/bin/bash
 find . -maxdepth 1 -name "*.html" -exec bash -c '
+for file; do
+    parent="../$(basename "$file")"
+    if [ ! -e "$parent" ] || [ "$file" -nt "$parent" ]; then
+        cp "$file" "$parent"
+    fi
+done
+' bash {} +

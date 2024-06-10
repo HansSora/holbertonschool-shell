@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -exec bash -c 'parent="../$(basename "{}")"; [ ! -e "$parent" ] || [ "{}" -nt "$parent" ] && cp "{}" "$parent"' bash {} +
+cp *.html ..

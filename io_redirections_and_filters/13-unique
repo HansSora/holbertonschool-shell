@@ -1,1 +1,2 @@
 #!/bin/bash
+read -p "Enter words: " -a words; for word in $(printf "%s\n" "${words[@]}" | sort | uniq -u); do echo $word; done

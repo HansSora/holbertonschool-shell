@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter input: " input; input=$(echo $input | tr Ac Ze); echo "Modified input: $input"
+read -p "Enter input: " input; echo "Modified input: $(echo $input | tr Ac Ze)"

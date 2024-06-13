@@ -1,0 +1,2 @@
+#!/bin/bash
+print('\n'.join([f"{key}: {value}" for key, value in os.environ.items()]))

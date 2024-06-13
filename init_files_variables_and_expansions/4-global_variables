@@ -1,2 +1,2 @@
 #!/bin/bash
-[print(f"{key}: {value}") for key, value in os.environ.items()]
+for var in $(compgen -e); do echo "$var=${!var}"; done

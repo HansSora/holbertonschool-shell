@@ -1,2 +1,2 @@
 #!/bin/bash
-import os; [print(f"{key}: {value}") for key, value in os.environ.items()]
+[print(f"{key}: {value}") for key, value in os.environ.items()]
